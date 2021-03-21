@@ -11,7 +11,7 @@ In general, these are the technical specifications:
 [720p](https://en.wikipedia.org/wiki/720p)
 - frame rate: 30 [FPS](https://en.wikipedia.org/wiki/Frame_rate)
 - video quality: 5 - 10 Mpbs
-- audio quality: 256 kbps or higher, e.g. 320 kbps
+- audio quality: 256 kbps, 320 kbps (preferred) or higher
 - audio sampling frequency: [44.1 kHz](https://en.wikipedia.org/wiki/44,100_Hz)
 
 ## 2 Installation
@@ -91,7 +91,7 @@ choose `1920x1080`. *
 ### 3.2 Output Audio
 
 In the `Audio` tab:
-1. Set for all tracks the `Audio Bitrate` to `256` or `320`.
+1. Set for all tracks the `Audio Bitrate` to `320`. *
 
 ![OBS Settings Output Audio](images/obs-settings-output-audio.png)
 
@@ -157,3 +157,9 @@ up OBS, please contact us via email or in the chat.
 ## 4 Streaming
 
 Instructions for live streaming will be added here soon.
+
+## 5 Tools
+
+In some cases the following free and open source tools can be useful:
+- [FFmpeg](https://ffmpeg.org/)
+- [Audacity](https://www.audacityteam.org/)
