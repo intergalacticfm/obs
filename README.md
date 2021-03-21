@@ -126,9 +126,10 @@ went OK.
 
 To avoid audio clipping, make sure the volume does not go into the red, also for
 any sound cards in between. As a safety precaution, use an independent MP3
-recorder to records the audio of your set too. this has prover very useful!
+recorder to records the audio of your set too. this has proven very useful!
 
-Use a clapperboard for all cameras to fix their delay with the audio.
+Use a clapperboard or clapping your hands in front of all cameras to help you
+fix their delay with the audio.
 
 ![Clapperboard](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/ClapperboardColor.svg/573px-ClapperboardColor.svg.png)
 
