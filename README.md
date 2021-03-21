@@ -4,14 +4,24 @@ This document has instructions for making recordings or doing live streaming
 with [OBS Studio](https://obsproject.com/). This is free and open source
 software which runs on Windows, macOS and Linux.
 
-## 1 Installation
+## 1 Summary
+
+In general, these are the technical specifications:
+- resolution: [1080p](https://en.wikipedia.org/wiki/1080p) (preferred) or
+[720p](https://en.wikipedia.org/wiki/720p)
+- frame rate: 30 [FPS](https://en.wikipedia.org/wiki/Frame_rate)
+- video quality: 5 - 10 Mpbs
+- audio quality: 256 kbps
+- audio sampling frequency: [44.1 kHz](https://en.wikipedia.org/wiki/44,100_Hz)
+
+## 2 Installation
 
 Install the latest version of OBS from their website.
 
 For Linux, use their PPA to get the latest version and automatically keep it up
 to date. Many Linux distributions ship OBS, but this is often an older version.
 
-### 1.1 Configuration
+### 2.1 Configuration
 
 When starting OBS for the first time, an auto-configuration wizard is started.
 Choose a `Base (Canvas) Resolution` of `1920x1080` and `30` for `FPS`. For both,
@@ -20,7 +30,7 @@ preferably not the `Use Current` version, but only these values.
 Because resolution and frame rate has been set here, other settings will follow
 this and usually do not need to be set to this too.
 
-### 1.2 Cameras
+### 2.2 Cameras
 
 First, make sure the needed docks are shown. Go in the menu to `View` and under
 `Docks` check at least `Scenes`, `Sources`, `Audio Mixer` and `Controls`.
@@ -57,7 +67,7 @@ helpful.
 When another application is used to mix the video, for example Resolume, only
 the resulting video should be added as NDI.
 
-## 2 Recording
+## 3 Recording
 
 To make a recording to send in for exclusive broadcasting, make the following
 steps.
@@ -65,7 +75,7 @@ steps.
 Go in the menu to `File` and choose `Settings`. Then under `Output`, choose
 `Advanced` for `Output Mode`.
 
-### 2.1 Output Recording
+### 3.1 Output Recording
 
 Then, in the `Recoding` tab, set the recording path to what you prefer.
 Essential is to make the settings:
@@ -74,47 +84,48 @@ Essential is to make the settings:
 3. **Only** when working with other resolutions, enable `Rescale Output` and
 choose `1920x1080`. *
 4. For `Rate Control` choose `CBR` (probably already set to that).
-5. Below that, set a `Bitrate` of `5000 Kpbs`. *
+5. Below that, set a `Bitrate` of `10000 kbps`. (10 Mbps) *
 
 ![OBS Settings Output Recording](images/obs-settings-output-recording.png)
 
-### 2.2 Output Audio
+### 3.2 Output Audio
 
 In the `Audio` tab:
-1. Set for all tracks the `Audio Bitrate` to `320`. *
+1. Set for all tracks the `Audio Bitrate` to `256`.
 
 ![OBS Settings Output Audio](images/obs-settings-output-audio.png)
 
-### 2.3 Video
+### 3.3 Video
 
 In the `Video` settings, set all resolutions and frame rates as is desired.
 
-### 2.4 Alternative settings *
+### 3.4 Alternative settings *
 
 In case your device cannot cope with these settings, make the following changes
 to settings indicated with an * under `Recording`:
 * set `Rescale Output` to `1280x720`
-* set `Bitrate` to `3000 Kpbs`
+* set `Bitrate` to `5000 kbps` (5 Mbps)
 
-If that is still not enough to make it work properly, change also this setting
-with an * under `Audio`:
-* set `Audio Bitrate` to `192`
-
-### 2.5 Fixing delay
+### 3.5 Fixing delay
 
 Choose in the menu `Edit` the menu item called `Advanced Audio Properties`.
 There you can set a positive or negative `Sync Offset` in milliseconds for each
 audio source.
 
-### 2.6 Recording, texts, logos, etc.
+### 3.6 Recording, texts, logos, etc.
 
 Record **without** any logos or text in the video! Also, do not make
 announcements in the audio.
 
-A recording should be minimally 30 minutes and maximum 60 minutes long. Good to
-do some proper testing before doing a recording. Close other applications and
-mute notification sounds from your device. View your recording before sending it
-in to double check all went OK.
+A recording by a DJ should be minimally 30 minutes and maximum 60 minutes long.
+A live production ha a maximum of 45 minutes. Good to do some proper testing
+before doing a recording. Close other applications and mute notification sounds
+from your device. View your recording before sending it in to double check all
+went OK.
+
+To avoid audio clipping, make sure the volume does not go into the red, also for
+any sound cards in between. As a safety precaution, use an independent MP3
+recorder to records the audio of your set too. this has prover very useful!
 
 Use a clapperboard for all cameras to fix their delay with the audio.
 
@@ -141,6 +152,6 @@ exclude the recording from broadcasting.
 If you have any questions, such as personal upload instructions or help setting
 up OBS, please contact us via email or in the chat.
 
-## 3 Streaming
+## 4 Streaming
 
 Instructions for live streaming will be added here soon.
