@@ -1,7 +1,8 @@
 # Open Broadcaster Software (OBS)
 
 This document has instructions for making recordings or doing live streaming
-with [OBS Studio](https://obsproject.com/). This is free and open source
+with [OBS Studio](https://obsproject.com/) for
+[Intergalactic FM](https://www.intergalactic.fm/). This is free and open source
 software which runs on Windows, macOS and Linux.
 
 ## 1 Summary
@@ -61,8 +62,8 @@ not being used in the audio mixer. Also disable autofocus of each camera and
 use a fixed focus.
 
 If you are performing by yourself, an automated scene switcher such as
-https://obsproject.com/forum/resources/advanced-scene-switcher.395/ is very
-helpful.
+[Advanced Scene Switcher](https://obsproject.com/forum/resources/advanced-scene-switcher.395/)
+is very helpful.
 
 When another application is used to mix the video, for example Resolume, only
 the resulting video should be added as NDI.
@@ -124,6 +125,10 @@ before doing a recording. Close other applications and mute notification sounds
 from your device. View your recording before sending it in to double check all
 went OK.
 
+Again, plan enough time, preferably a few days before you record a set, to test
+your specific OBS setup. That way you have time to let us help you solve any
+issues before your start recording.
+
 To avoid audio clipping, make sure the volume does not go into the red, also for
 any sound cards in between. As a safety precaution, use an independent MP3
 recorder to records the audio of your set too. this has proven very useful!
@@ -137,13 +142,20 @@ If you have, for example, two artists recording directly after each other at the
 same location, make two separate recordings from it please.
 
 Provide the following text the accompanying message when sending in a recording:
-* artist name, in proper upper and lower case characters and spaces where needed
-because we don't want to guess the correct spelling
+* artist's name, in proper upper and lower case characters and spaces where
+needed because we don't want to guess the correct spelling
 * English name of the city and country where the recording was made
-* date when the recording was made, if possible also the start time
 
 If desired, also send in a logo as a PNG or PDF file. Use a transparent
-background when needed.
+background when needed. If your logo consists of words and is very wide, try to
+make a version that is more square. E.g. for logo as
+
+    Abcdefghij Klmnopqrstu
+
+try to make a version in this way
+
+    Abcdefghij
+    Klmnopqrstu
 
 **IMPORTANT:** When you send in any recording, you agree with exclusive
 broadcasting rights until two weeks after the first broadcast. Then your
@@ -163,3 +175,6 @@ Instructions for live streaming will be added here soon.
 In some cases the following free and open source tools can be useful:
 - [FFmpeg](https://ffmpeg.org/)
 - [Audacity](https://www.audacityteam.org/)
+
+If you have improvements for this document, please create an
+[issue](https://github.com/intergalacticfm/obs/issues) for it.
