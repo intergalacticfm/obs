@@ -87,12 +87,17 @@ Then, in the `Recoding` tab, set the recording path to what you prefer.
 Essential is to make the settings:
 1. Set the `Recording Format` to `mp4` and enable the audio tracks you use.
 2. Set `Encoder` to `x264`
-3. **Only** when working with other resolutions, enable `Rescale Output` and
+3. **Only** when working with another resolutions, enable `Rescale Output` and
 choose `1920x1080`. *
 4. For `Rate Control` choose `CBR` (probably already set to that).
 5. Below that, set a `Bitrate` of `10000 kbps`. (10 Mbps) *
 
 ![OBS Settings Output Recording](images/obs-settings-output-recording.png)
+
+If the computer on which OBS is running or your power supply is unstable,
+choose `mkv` for `Recording Format`, but convert the result to `mp4` later with
+`Remux recordings` from the `File` menu. This is relatively easy to do and in
+case OBS crashes, you have still a part of your recording.
 
 ### 3.2 Output Audio
 
@@ -101,15 +106,25 @@ In the `Audio` tab:
 
 ![OBS Settings Output Audio](images/obs-settings-output-audio.png)
 
+See also the overall audio settings.
+
+![OBS Settings Audio](images/obs-settings-audio.png)
+
 ### 3.3 Video
 
 In the `Video` settings, set all resolutions and frame rates as is desired.
+
+![OBS Settings Output Video](images/obs-settings-output-video.png)
+
+See also the overall video settings.
+
+![OBS Settings Audio](images/obs-settings-audio.png)
 
 ### 3.4 Alternative settings *
 
 In case your device cannot cope with these settings, make the following changes
 to settings indicated with an * under `Recording`:
-* set `Rescale Output` to `1280x720`
+* set `Rescale Output` to `1280x720` or better make all settings `1280x720`
 * set `Bitrate` to `5000 kbps` (5 Mbps)
 * set `Audio Bitrate` to `256 kbps`
 
@@ -128,7 +143,7 @@ A recording by a DJ should be minimally 30 minutes and maximum 60 minutes long.
 A live production ha a maximum of 45 minutes. Good to do some proper testing
 before doing a recording. Close other applications and mute notification sounds
 from your device. View your recording before sending it in to double check all
-went OK.
+went OK. Also, do not wear flip-flops on camera.
 
 Again, plan enough time, preferably a few days before you record a set, to test
 your specific OBS setup. That way you have time to let us help you solve any
@@ -136,12 +151,12 @@ issues before your start recording.
 
 To avoid audio clipping, make sure the volume does not go into the red, also for
 any sound cards in between. As a safety precaution, use an independent MP3
-recorder to records the audio of your set too. this has proven very useful!
+recorder to records the audio of your set too. this has proven very useful.
 
-Use a clapperboard or clapping your hands in front of all cameras to help you
-fix their delay with the audio.
-
-![Clapperboard](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/ClapperboardColor.svg/573px-ClapperboardColor.svg.png)
+Use a [clapperboard](https://en.wikipedia.org/wiki/Clapperboard) or simply
+clapping your hands in front of all cameras to help you fix their delay with the
+audio. If you have forgotten this at the beginning of the recording, add it at
+the end of the recording for the most important camera.
 
 If you have, for example, two artists recording directly after each other at the
 same location, make two separate recordings from it please.
