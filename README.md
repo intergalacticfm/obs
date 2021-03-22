@@ -66,7 +66,12 @@ If you are performing by yourself, an automated scene switcher such as
 is very helpful.
 
 When another application is used to mix the video, for example Resolume, only
-the resulting video should be added as NDI.
+the resulting video should be added as
+[RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) or
+[NDI](https://en.wikipedia.org/wiki/Network_Device_Interface).
+
+These methods of importing video into OBS can also be used of you do not have a
+webcam and are using the camera from your smartphone, for example.
 
 ## 3 Recording
 
