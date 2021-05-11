@@ -112,11 +112,7 @@ See also the overall audio settings.
 
 ### 3.3 Video
 
-In the `Video` settings, set all resolutions and frame rates as is desired.
-
-![OBS Settings Output Video](images/obs-settings-output-video.png)
-
-See also the overall video settings.
+In the `Video` tab, set all resolutions and frame rates as is desired.
 
 ![OBS Settings Audio](images/obs-settings-video.png)
 
@@ -190,7 +186,33 @@ up OBS, please contact us via email or in the chat.
 
 Instructions for live streaming will be added here soon.
 
-## 5 Tools
+## 5 Acceleration
+
+A video card or GPU can accelerate the video processing, rendering, conversion
+decoding or encoding. For Linux, you can install the VAAPI driver for your
+Intel or AMD card, e.d.
+
+    sudo apt-get install intel-media-va-driver i965-va-driver
+
+For NVIDIA, you can install for example
+
+    sudo apt-get install libnvidia-encode-465 libnvidia-decode-465
+
+The following tools can inform what capabilities your machine has
+
+    sudo apt-get install vainfo vdpauinfo
+
+Installation of drivers on Windows or macOS is differently. Probably your
+computer already has installed what it can handle.
+
+When all is installed correctly, the Streaming and Recording tab under Output
+will offer extra options. Normally these are x264 (which we use) and FFMPEG
+(which we do not use). Added can be NVENC or VAAPI. Note that not only will this
+speed up OBS, it will reduce the load on your CPU significantly. This prevens
+OBS from aborting with errors or failing in other ways. Also it decreases the
+number of dropped frames.
+
+## 6 Tools
 
 In some cases the following free and open source tools can be useful:
 - [FFmpeg](https://ffmpeg.org/)
