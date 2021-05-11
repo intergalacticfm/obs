@@ -118,7 +118,7 @@ In the `Video` settings, set all resolutions and frame rates as is desired.
 
 See also the overall video settings.
 
-![OBS Settings Audio](images/obs-settings-audio.png)
+![OBS Settings Audio](images/obs-settings-video.png)
 
 ### 3.4 Alternative settings *
 
