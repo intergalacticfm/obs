@@ -73,7 +73,7 @@ the resulting video should be added as
 These methods of importing video into OBS can also be used of you do not have a
 webcam and are using the camera from your smartphone, for example.
 
-Use hard copies of a (Siemens star)[https://en.wikipedia.org/wiki/Siemens_star]
+Use hard copies of a [Siemens star](https://en.wikipedia.org/wiki/Siemens_star)
 to help manually focus all cameras.
 
 ## 3 Recording
